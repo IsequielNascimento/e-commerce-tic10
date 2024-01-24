@@ -12,10 +12,10 @@ import Myproducts from './Pages/Myproducts'
 import Products from './pages/Products'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
+      <Header />
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<Home />} />
@@ -27,6 +27,7 @@ function App() {
 
         </Routes>
       </BrowserRouter>
+      <Footer />
     </>
   )
 }
