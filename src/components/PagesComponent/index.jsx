@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 export default function PagesComponent() {
 
     return (
@@ -10,24 +12,34 @@ export default function PagesComponent() {
                 <button>
                     Home
                 </button>
-                <button>
-                    Produtos
-                </button>
-                <button>
-                    Categorias
-                </button>
+                <Link to="products" relative="">
+                    <button>
+                        Produtos
+                    </button>
+                </Link>
+                <Link to="category">
+                    <button>
+                        Categorias
+                    </button>
+                </Link>
+                <Link to="my-products">
                 <button>
                     Meus Pedidos
                 </button>
+                </Link>
             </div>
             <hr />
             <span>
+                <Link to="register">
                 <button>
                     Cadastre-se
                 </button>
+                </Link>
+                <Link to="login">
                 <button>
                     Entrar
                 </button>
+                </Link>
             </span>
         </section>
     )
