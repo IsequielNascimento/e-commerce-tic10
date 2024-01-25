@@ -6,16 +6,21 @@ export default function Header() {
 
 
     return (
-        <header>
-            <div>
-                <button> - </button>
-                <img src="./src/assets/E-rede_Store.png" alt="" />
-                <IoCartOutline />
-            </div>
-            <label htmlFor="">
-            <IoSearchOutline />
-                <input type="text" placeholder="Buscar" className="" />
-            </label>
-        </header>
+        <>
+     
+            <header className=" flex flex-col w-screen items-center">
+                <div className=" w-screen flex items-center m-6 justify-around">
+                    <button> - </button>
+                    <img src="./src/assets/E-rede_Store.png" alt="" />
+                    <IoCartOutline />
+                </div>
+
+                <label htmlFor="">
+                    <IoSearchOutline />
+                    <input type="text" placeholder="Buscar" className="" />
+                </label>
+            </header>
+        
+        </>
     )
 }
