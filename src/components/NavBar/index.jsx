@@ -3,44 +3,45 @@ import { Link } from "react-router-dom"
 export default function NavBar() {
 
     return (
-        <section>
-            <h3>
+        <span className="flex items-center justify-center w-screen h-auto">
+            <h3 className="text-white">
                 Páginas
             </h3>
             <hr />
+
             <div>
-                <button className=" ">
+                <Link to=".." className="text-white">
                     Home
-                </button>
-                <Link to="products" relative="">
-                    <button>
-                        Produtos
-                    </button>
                 </Link>
-                <Link to="category">
-                    <button>
-                        Categorias
-                    </button>
+                <Link to="/products" className=" text-white">
+
+                    Produtos
+
                 </Link>
-                <Link to="my-products">
-                <button>
+                <Link to="/category" className="text-white">
+
+                    Categorias
+
+                </Link>
+                <Link to="/my-products" className="text-white">
+
                     Meus Pedidos
-                </button>
+
                 </Link>
             </div>
             <hr />
             <span>
-                <Link to="register">
-                <button>
+                <Link to="/register" className="text-white">
+
                     Cadastre-se
-                </button>
+
                 </Link>
-                <Link to="login">
-                <button>
+                <Link to="/login" className="text-white">
+
                     Entrar
-                </button>
+
                 </Link>
             </span>
-        </section>
+        </span>
     )
 }
