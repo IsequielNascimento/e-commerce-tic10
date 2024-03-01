@@ -6,7 +6,7 @@ export default function CardCategory({ categoryName, imagePath }) {
       <div className="col-span-1 flex justify-center items-center">
         <img src={imagePath} alt={categoryName} className="w-[82px] h-[81px] rounded-md shadow-xl" />
       </div>
-      <div className="col-span-2 flex justify-center items-center">
+       <div className="col-span-2 flex justify-center items-center">
         <p className="text-xl font-semibold">{categoryName}</p>
       </div>
     </div>

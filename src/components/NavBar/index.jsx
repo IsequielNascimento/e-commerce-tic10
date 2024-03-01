@@ -1,47 +1,21 @@
-import { Link } from "react-router-dom"
+import { Link } from "react-router-dom";
 
 export default function NavBar() {
-
     return (
-        <span className="flex items-center justify-center w-screen h-auto">
-            <h3 className="text-white">
-                Páginas
-            </h3>
-            <hr />
-
-            <div>
-                <Link to=".." className="text-white">
-                    Home
-                </Link>
-                <Link to="/products" className=" text-white">
-
-                    Produtos
-
-                </Link>
-                <Link to="/category" className="text-white">
-
-                    Categorias
-
-                </Link>
-                <Link to="/my-products" className="text-white">
-
-                    Meus Pedidos
-
-                </Link>
+        <div className="flex flex-col items-center text-white">
+            <h3 className="mb-2">Páginas</h3>
+            <hr className="w-16 border-white mb-2" />
+            <div className="flex flex-col items-center space-y-2">
+                <Link to="/" className="text-white">Home</Link>
+                <Link to="/products" className="text-white">Produtos</Link>
+                <Link to="/categories" className="text-white">Categorias</Link>
+                <Link to="/orders" className="text-white">Meus Pedidos</Link>
             </div>
-            <hr />
-            <span>
-                <Link to="/register" className="text-white">
-
-                    Cadastre-se
-
-                </Link>
-                <Link to="/login" className="text-white">
-
-                    Entrar
-
-                </Link>
-            </span>
-        </span>
-    )
+            <hr className="w-16 border-white my-2" />
+            <div className="flex space-x-2">
+                <Link to="/register" className="text-white">Cadastre-se</Link>
+                <Link to="/login" className="text-white">Entrar</Link>
+            </div>
+        </div>
+    );
 }
