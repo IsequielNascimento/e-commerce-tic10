@@ -1,7 +1,4 @@
-import { IoCartOutline } from "react-icons/io5";
-import { IoSearchOutline } from "react-icons/io5";
-import { IoMdMenu } from "react-icons/io";
-import NavigationBar from "../NavigationBar";
+import { Link } from "react-router-dom";
 
 export default function NavBar() {
     return (
@@ -22,3 +19,4 @@ export default function NavBar() {
         </div>
     );
 }
+
