@@ -1,7 +1,7 @@
 import { IoCartOutline } from "react-icons/io5";
 import { IoSearchOutline } from "react-icons/io5";
 import { IoMdMenu } from "react-icons/io";
-import NavBar from "../NavBar";
+import NavigationBar from "../NavigationBar";
 
 
 export default function Header() {
